@@ -563,6 +563,7 @@
 [ARITHMETIC] आरम्भ Batch || Class -01 || Average (औसत) | By Gagan Sir : https://selectionwaylive.hranker.com/561/699eba73a2b1ae04330c851e/playlist-mpl-vod.m3u8
 [ARITHMETIC] आरम्भ Batch || Class -02 || Average (औसत) | By Gagan Sir : https://selectionwaylive.hranker.com/561/6999512b399756d49271834d/playlist-mpl-vod.m3u8
 [ARITHMETIC] आरम्भ Batch || Class -03 || Average (औसत) | By Gagan Sir : https://selectionwaylive.hranker.com/561/69abb6fa0cd8b6c0dd1894aa/playlist-mpl-vod.m3u8
+# PDF
 [All Pdfs] Percentage Sheet -1 : https://selectionwayserver.hranker.com/pdfs/files/Percentage Sheet -1.pdf
 [All Pdfs] Percentage Sheet-2 : https://selectionwayserver.hranker.com/pdfs/files/Percentage Sheet-2.pdf
 [All Pdfs] Percentage Sheet -3 : https://selectionwayserver.hranker.com/pdfs/files/Percentage Sheet -3.pdf
