@@ -1,3 +1,4 @@
+# Percentage
 [Arithmetic] Percentage_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/69202b7f3ce596d256c8502a/hls/master.m3u8
 [Arithmetic] Percentage_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/69202b7f3ce596d256c8502b/hls/master.m3u8
 [Arithmetic] Percentage_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/69202b7f3ce596d256c8502c/hls/master.m3u8
@@ -26,6 +27,7 @@
 [Arithmetic] Percentage_Class_26 : https://selectionwayrecordedmp4.hranker.com/561/692152e19eaaab49271b0124/hls/master.m3u8
 [Arithmetic] Percentage_Class_27 : https://selectionwayrecordedmp4.hranker.com/561/692152e19eaaab49271b0125/hls/master.m3u8
 [Arithmetic] Percentage_Class_28 : https://selectionwayrecordedmp4.hranker.com/561/692152e19eaaab49271b0126/hls/master.m3u8
+# Ratio
 [Arithmetic] Ratio_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692183dc22cf6455f92ca94f/hls/master.m3u8
 [Arithmetic] Ratio_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/69464f818c23d550e67edb6b/hls/master.m3u8
 [Arithmetic] Ratio_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/692183dc22cf6455f92ca951/hls/master.m3u8
@@ -40,6 +42,7 @@
 [Arithmetic] Ratio_Class_12 : https://selectionwayrecordedmp4.hranker.com/561/6921842ebe661b7fe6bf1e64/hls/master.m3u8
 [Arithmetic] Ratio_Class_13 : https://selectionwayrecordedmp4.hranker.com/561/6921536c9ff1e20c7b538f03/hls/master.m3u8
 [Arithmetic] Ratio_Class_14 : https://selectionwayrecordedmp4.hranker.com/561/6921536c9ff1e20c7b538f04/hls/master.m3u8
+# Profit & Loss
 [Arithmetic] Profit_Loss_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/69216ff2b20d8b93c0ef4554/hls/master.m3u8
 [Arithmetic] Profit_Loss_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/69216ff2b20d8b93c0ef4555/hls/master.m3u8
 [Arithmetic] Profit_Loss_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/69216ff2b20d8b93c0ef4556/hls/master.m3u8
@@ -54,6 +57,7 @@
 [Arithmetic] Profit_Loss_Class_12 : https://selectionwayrecordedmp4.hranker.com/561/6946375c3d72cd442bc5992d/hls/master.m3u8
 [Arithmetic] Profit_Loss_Class_13 : https://selectionwayrecordedmp4.hranker.com/561/69229214d043775c3232572e/hls/master.m3u8
 [Arithmetic] Profit_Loss_Class_14 : https://selectionwayrecordedmp4.hranker.com/561/69229214d043775c3232572f/hls/master.m3u8
+# Discount
 [Arithmetic] Discount_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ec3/hls/master.m3u8
 [Arithmetic] Discount_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ec4/hls/master.m3u8
 [Arithmetic] Discount_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ec5/hls/master.m3u8
@@ -67,6 +71,7 @@
 [Arithmetic] Discount_Class_11 : https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ecd/hls/master.m3u8
 [Arithmetic] Discount_Class_12 : https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ece/hls/master.m3u8
 [Arithmetic] Discount_Class_13 : https://selectionwayrecordedmp4.hranker.com/561/6922924c80670b21599d2ecf/hls/master.m3u8
+# Time & Work
 [Arithmetic] Time_Work_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bf6/hls/master.m3u8
 [Arithmetic] Time_Work_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bf7/hls/master.m3u8
 [Arithmetic] Time_Work_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881bf8/hls/master.m3u8
@@ -85,6 +90,7 @@
 [Arithmetic] Time_Work_Class_16 : https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881c05/hls/master.m3u8
 [Arithmetic] Time_Work_Class_17 : https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881c06/hls/master.m3u8
 [Arithmetic] Time_Work_Class_18 : https://selectionwayrecordedmp4.hranker.com/561/6922935e644d85e977881c07/hls/master.m3u8
+# Pipe & Cistern
 [Arithmetic] Pipe_and_Cistern_1 : https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c2e/hls/master.m3u8
 [Arithmetic] Pipe_and_Cistern_2 : https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c2f/hls/master.m3u8
 [Arithmetic] Pipe_and_Cistern_3 : https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c30/hls/master.m3u8
@@ -93,6 +99,7 @@
 [Arithmetic] Pipe_and_Cistern_6 : https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c33/hls/master.m3u8
 [Arithmetic] Pipe_and_Cistern_7 : https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c34/hls/master.m3u8
 [Arithmetic] Pipe_and_Cistern_8 : https://selectionwayrecordedmp4.hranker.com/561/694e7ce1c407d45e31612c35/hls/master.m3u8
+# Time Speed & Distance
 [Arithmetic] Time_Speed_Distance_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efc/hls/master.m3u8
 [Arithmetic] Time_Speed_Distance_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efd/hls/master.m3u8
 [Arithmetic] Time_Speed_Distance_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/6922929e8b0d4f251f7f7efe/hls/master.m3u8
@@ -110,12 +117,15 @@
 [Arithmetic] Time_Speed_Distance_Class_15 : https://selectionwayrecordedmp4.hranker.com/561/692292bee2b37c269bc949cb/hls/master.m3u8
 [Arithmetic] Time_Speed_Distance_Class_16 : https://selectionwayrecordedmp4.hranker.com/561/692292bee2b37c269bc949cc/hls/master.m3u8
 [Arithmetic] Time_Speed_Distance_Class_17 : https://selectionwayrecordedmp4.hranker.com/561/69463c308c23d550e67edb69/hls/master.m3u8
+# Train
 [Arithmetic] Train_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5426/hls/master.m3u8
 [Arithmetic] Train_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5427/hls/master.m3u8
 [Arithmetic] Train_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5428/hls/master.m3u8
+# Race
 [Arithmetic] Race_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692a9a5f759872676ecc8889/hls/master.m3u8
 [Arithmetic] Race_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/692a9a5f759872676ecc888a/hls/master.m3u8
 [Arithmetic] Race_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/692a9a5f759872676ecc888b/hls/master.m3u8
+# Average
 [Arithmetic] Average_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/6946582d8c23d550e67edb6c/hls/master.m3u8
 [Arithmetic] Average_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c606d/hls/master.m3u8
 [Arithmetic] Average_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c606e/hls/master.m3u8
@@ -124,10 +134,12 @@
 [Arithmetic] Average_Class_6 : https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c6071/hls/master.m3u8
 [Arithmetic] Average_Class_7 : https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c6072/hls/master.m3u8
 [Arithmetic] Average_Class_8 : https://selectionwayrecordedmp4.hranker.com/561/69294b855a127e81985c6073/hls/master.m3u8
+# Partnership
 [Arithmetic] Partnership_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692ad53b85291c541afcdbe1/hls/master.m3u8
 [Arithmetic] Partnership_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/692ad53b85291c541afcdbe2/hls/master.m3u8
 [Arithmetic] Partnership_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/692ad53b85291c541afcdbe3/hls/master.m3u8
 [Arithmetic] Partnership_Class_4 : https://selectionwayrecordedmp4.hranker.com/561/692ad53b85291c541afcdbe4/hls/master.m3u8
+# Mixture & Allegation
 [Arithmetic] Mixture_and_Allegation_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb36c/hls/master.m3u8
 [Arithmetic] Mixture_and_Allegation_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb36d/hls/master.m3u8
 [Arithmetic] Mixture_and_Allegation_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb36e/hls/master.m3u8
@@ -143,11 +155,14 @@
 [Arithmetic] Mixture_and_Allegation_Class_13 : https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb378/hls/master.m3u8
 [Arithmetic] Mixture_and_Allegation_Class_14 : https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb379/hls/master.m3u8
 [Arithmetic] Mixture_and_Allegation_Class_15 : https://selectionwayrecordedmp4.hranker.com/561/69315c4de1a6850a4d5fb37a/hls/master.m3u8
+# Boat Stream
 [Arithmetic] Boat_Stream_class_1 : https://selectionwayrecordedmp4.hranker.com/561/69464f423d72cd442bc59932/hls/master.m3u8
 [Arithmetic] Boat_Stream_class_2 : https://selectionwayrecordedmp4.hranker.com/561/6925d3f9e47ee59d0587f5a0/hls/master.m3u8
 [Arithmetic] Boat_Stream_class_3 : https://selectionwayrecordedmp4.hranker.com/561/6925d3f9e47ee59d0587f5a1/hls/master.m3u8
+# Age
 [Arithmetic] Age_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692944f98bf0fdc074912978/hls/master.m3u8
 [Arithmetic] Age_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/692944f98bf0fdc074912979/hls/master.m3u8
+# SI CI
 [Arithmetic] SI_CI_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c553/hls/master.m3u8
 [Arithmetic] SI_CI_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c554/hls/master.m3u8
 [Arithmetic] SI_CI_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/692292f6823b7abf3cc1c555/hls/master.m3u8
@@ -172,6 +187,7 @@
 [Arithmetic] SI_CI_Class_22 : https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc2d/hls/master.m3u8
 [Arithmetic] SI_CI_Class_23 : https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc2e/hls/master.m3u8
 [Arithmetic] SI_CI_Class_24 : https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc2f/hls/master.m3u8
+# Dishonest Shopkeeper
 [Arithmetic] Dishonest_Shopkeeper_1 : https://selectionwayrecordedmp4.hranker.com/561/694ecf5b4577e24306c5207b/hls/master.m3u8
 [Arithmetic] Dishonest_Shopkeeper_2 : https://selectionwayrecordedmp4.hranker.com/561/694ecf5b4577e24306c5207c/hls/master.m3u8
 [Arithmetic] Dishonest_Shopkeeper_3 : https://selectionwayrecordedmp4.hranker.com/561/694ecf5b4577e24306c5207d/hls/master.m3u8
