@@ -524,16 +524,22 @@ background:#000;
 display:block;
 }
 
-/* Fullscreen Fix */
-
 .video-container:fullscreen{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
 height:100vh;
-aspect-ratio:auto;
+z-index:99999;
 }
 
 .video-container:-webkit-full-screen{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
 height:100vh;
-aspect-ratio:auto;
+z-index:99999;
 }
 
 </style>
