@@ -29,9 +29,16 @@ background:#000;
 .video-container{
 position:relative;
 width:100%;
-aspect-ratio:16/9;
+height:60vh;
 background:black;
 }
+
+@media (max-width:768px){
+.video-container{
+height:auto;
+aspect-ratio:16/9;
+}
+
 
 video{
 width:100%;
