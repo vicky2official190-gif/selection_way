@@ -662,14 +662,24 @@ f.textContent=line.replace("#","");
 const items=document.createElement("div");
 items.className="folder-items";
 
-f.onclick=()=>items.classList.toggle("open");
-
+f.onclick=()=>{
+items.classList.toggle("open");
+f.classList.toggle("open");
+}
 playlist.appendChild(f);
 playlist.appendChild(items);
 
 folder=items;
 
 return;
+}
+
+.folder::before{
+content:"▶ ";
+}
+
+.folder.open::before{
+content:"▼ ";
 }
 
 if(type==="pdf" && !line.includes(".pdf")) return;
