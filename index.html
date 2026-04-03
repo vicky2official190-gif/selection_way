@@ -1025,9 +1025,12 @@ loader.style.display="none";
 </script>
 
 <script>
-if("serviceWorker" in navigator){
-navigator.serviceWorker.register("/sw.js");
+if ("serviceWorker" in navigator) {
+window.addEventListener("load", function() {
+navigator.serviceWorker.register("/sw.js")
+.then(() => console.log("SW registered"))
+.catch(err => console.log("SW error", err));
+});
 }
 </script>
-
 </body></html>
