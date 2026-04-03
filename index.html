@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Player</title>
+
+<link rel="icon" href="data:,">
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<style>
+
+body{
+margin:0;
+background:#000;
+color:white;
+font-family:Arial;
+overflow-x:hidden;
+}
+
+.sticky-player{
+position:sticky;
+top:0;
+z-index:9999;
+background:#000;
+}
+
+.video-container{
+position:relative;
+width:100%;
+aspect-ratio:16/9;
+background:black;
+}
+
+video{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* PDF */
+
+.pdf-viewer{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:none;
+display:none;
+background:white;
+z-index:2;
+}
+
+/* Double Tap Animation */
+
+.tap-indicator{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+font-size:28px;
+background:rgba(0,0,0,.5);
+padding:20px;
+border-radius:50%;
+opacity:0;
+pointer-events:none;
+transition:.3s;
+}
+
+.tap-left{ left:20%; }
+.tap-right{ right:20%; }
+
+.tap-indicator.show{ opacity:1; }
+
+.video-title{
+padding:10px;
+background:#111;
+font-size:14px;
+}
+
+.controls{
+position:absolute;
+bottom:0;
+width:100%;
+background:linear-gradient(transparent,rgba(0,0,0,0.9));
+padding:25px 10px 10px;
+transition:.3s;
+z-index:3;
+}
+
+.controls.hide{ 
+opacity:0;
+pointer-events:none;
+}
+
+.progress-container{
+position:absolute;
+bottom:65px;
+left:10px;
+right:10px;
+height:5px;
+background:rgba(255,255,255,0.2);
+cursor:pointer;
+border-radius:10px;
+overflow:visible;
+transition:0.2s;
+}
+
+.buffer{
+position:absolute;
+height:100%;
+width:0%;
+background:rgba(255,255,255,0.4);
+border-radius:10px;
+}
+
+.progress{
+position:absolute;
+height:100%;
+width:0%;
+background:#ff0000;
+border-radius:10px;
+transition:width .1s linear;
+}
+
+/* Hover effect */
+
+.progress-container:hover{
+height:7px;
+}
+.hover-time{
+position:absolute;
+bottom:20px;
+background:black;
+color:white;
+padding:3px 6px;
+font-size:11px;
+border-radius:4px;
+display:none;
+transform:translateX(-50%);
+z-index:10;
+}
+.time{
+text-align:center;
+font-size:12px;
+margin:5px 0;
+}
+
+.bottom-controls{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.bottom-controls button,
+.bottom-controls select{
+background:#111;
+border:1px solid #333;
+color:white;
+padding:6px 10px;
+cursor:pointer;
+}
+
+.header{
+display:flex;
+gap:10px;
+padding:10px;
+background:#111;
+position:sticky;
+top:0;
+z-index:9998;
+}
+
+.btn{
+background:#222;
+padding:6px 12px;
+cursor:pointer;
+}
+
+.search{ margin-left:auto; }
+
+.search input{
+background:#222;
+border:1px solid #444;
+color:white;
+padding:5px;
+}
+
+.item{
+padding:12px;
+border-bottom:1px solid #333;
+cursor:pointer;
+}
+
+.item.active{
+background:#222;
+border-left:4px solid red;
+}
+.item{
+padding:12px;
+border-bottom:1px solid #333;
+cursor:pointer;
+position:relative;
+}
+
+.item.watched::after{
+content:"✓";
+position:absolute;
+right:15px;
+top:50%;
+transform:translateY(-50%);
+color:#00ff88;
+background:#003b22;
+border-radius:50%;
+width:22px;
+height:22px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:14px;
+}
+
+/* WATCHED TICK */
+
+.item.watched::after{
+content:"✔";
+float:right;
+color:#00ff88;
+font-weight:bold;
+}
+
+
+.loader{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:40px;
+height:40px;
+border:4px solid rgba(255,255,255,0.3);
+border-top:4px solid white;
+border-radius:50%;
+animation:spin 1s linear infinite;
+display:none;
+z-index:5;
+}
+
+@keyframes spin{
+0%{ transform:translate(-50%,-50%) rotate(0deg); }
+100%{ transform:translate(-50%,-50%) rotate(360deg); }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sticky-player">
+
+<div class="video-container" id="videoContainer">
+
+<video id="video" preload="auto" playsinline webkit-playsinline></video>
+<div class="loader" id="loader"></div>
+
+<iframe id="pdfViewer" class="pdf-viewer"></iframe>
+
+<div class="tap-indicator tap-left" id="tapLeft">⏪ 10s</div>
+<div class="tap-indicator tap-right" id="tapRight">⏩ 10s</div>
+
+<div class="controls" id="controls">
+
+<div class="progress-container" id="progressContainer">
+<div class="buffer" id="buffer"></div>
+<div class="progress" id="progress"></div>
+<div class="hover-time" id="hoverTime">0:00</div>
+</div>
+
+<div class="time" id="timeDisplay">0:00 / 0:00</div>
+
+<div class="bottom-controls">
+<button onclick="rewind()">⏪ 10s</button>
+<button onclick="stopVideo()">⏹ Stop</button>
+<button onclick="forward()">⏩ 10s</button>
+
+<select onchange="changeSpeed(this.value)">
+<option>0.5</option>
+<option>0.75</option>
+<option selected>1</option>
+<option>1.25</option>
+<option>1.5</option>
+<option>1.75</option>
+<option>2</option>
+</select>
+
+<select class="quality" onchange="changeQuality(this.value)">
+<option value="-1">Auto</option>
+</select>
+
+<button onclick="toggleFullscreen()">⛶</button>
+
+</div>
+
+</div>
+</div>
+
+<div class="video-title" id="videoTitle">
+No Lecture Playing
+</div>
+
+<div class="header">
+<div class="btn" onclick="loadList('videos')">Videos</div>
+<div class="btn" onclick="loadList('arithmetic')">Arithmetic</div>
+<div class="btn" onclick="loadList('pdf')">PDF</div>
+
+<div class="search">
+<input id="search" placeholder="Search" onkeyup="searchVideo()">
+</div>
+</div>
+
+</div>
+
+<div id="playlist"></div>
+
+<script>
+
+const video=document.getElementById("video");
+const loader=document.getElementById("loader");
+const pdfViewer=document.getElementById("pdfViewer");
+const videoContainer=document.getElementById("videoContainer");
+const progress=document.getElementById("progress");
+const buffer=document.getElementById("buffer");
+const progressContainer=document.getElementById("progressContainer");
+const hoverTime=document.getElementById("hoverTime");
+const timeDisplay=document.getElementById("timeDisplay");
+const videoTitle=document.getElementById("videoTitle");
+const controls=document.getElementById("controls");
+
+const tapLeft=document.getElementById("tapLeft");
+const tapRight=document.getElementById("tapRight");
+
+let currentHls;
+
+/* WATCHED VIDEOS */
+
+let currentVideoTitle=null;
+
+function markWatched(title){
+let watched=JSON.parse(localStorage.getItem("watchedVideos")||"[]");
+
+if(!watched.includes(title)){
+watched.push(title);
+localStorage.setItem("watchedVideos",JSON.stringify(watched));
+}
+
+document.querySelectorAll(".item").forEach(item=>{
+if(item.textContent===title){
+item.classList.add("watched");
+}
+});
+}
+progressContainer.addEventListener("mousemove",(e)=>{
+
+const rect=progressContainer.getBoundingClientRect();
+const percent=(e.clientX-rect.left)/rect.width;
+
+const time=percent*video.duration;
+
+hoverTime.style.left=(percent*100)+"%";
+hoverTime.innerText=format(time);
+hoverTime.style.display="block";
+
+});
+
+progressContainer.addEventListener("mouseleave",()=>{
+hoverTime.style.display="none";
+});
+function loadWatched(){
+let watched=JSON.parse(localStorage.getItem("watchedVideos")||"[]");
+
+document.querySelectorAll(".item").forEach(item=>{
+if(watched.includes(item.textContent)){
+item.classList.add("watched");
+}
+});
+}
+
+/* AUTO HIDE CONTROLS */
+
+let hideTimeout;
+
+function showControls(){
+controls.classList.remove("hide");
+
+clearTimeout(hideTimeout);
+
+hideTimeout=setTimeout(()=>{
+controls.classList.add("hide");
+},3000);
+}
+
+videoContainer.addEventListener("mousemove",showControls);
+videoContainer.addEventListener("touchstart",showControls);
+videoContainer.addEventListener("click",showControls);
+
+showControls();
+
+/* MOBILE ROTATE */
+
+document.addEventListener("fullscreenchange",()=>{
+
+if(document.fullscreenElement){
+
+if(screen.orientation && screen.orientation.lock){
+screen.orientation.lock("landscape").catch(()=>{});
+}
+
+}else{
+
+if(screen.orientation && screen.orientation.unlock){
+screen.orientation.unlock();
+}
+
+}
+
+});
+
+/* Double Tap */
+
+let lastTap=0;
+
+video.addEventListener("pointerup",(e)=>{
+
+const now=Date.now();
+
+if(now-lastTap<300){
+
+const rect=video.getBoundingClientRect();
+const x=e.clientX;
+
+if(x < rect.left + rect.width/2){
+
+video.currentTime-=10;
+tapLeft.classList.add("show");
+setTimeout(()=>tapLeft.classList.remove("show"),500);
+
+}else{
+
+video.currentTime+=10;
+tapRight.classList.add("show");
+setTimeout(()=>tapRight.classList.remove("show"),500);
+
+}
+
+lastTap=0;
+
+}else{
+lastTap=now;
+}
+
+});
+
+/* Stop */
+
+function stopVideo(){
+video.paused?video.play():video.pause();
+}
+
+/* Fullscreen */
+
+function toggleFullscreen(){
+if(!document.fullscreenElement){
+videoContainer.requestFullscreen();
+}else{
+document.exitFullscreen();
+}
+}
+
+/* Progress */
+
+video.addEventListener("timeupdate",()=>{
+
+if(video.duration){
+
+const percent=(video.currentTime/video.duration)*100;
+progress.style.width=percent+"%";
+
+timeDisplay.innerText=
+format(video.currentTime)+" / "+format(video.duration);
+
+}
+
+/* WATCH COMPLETE */
+
+if(video.duration && currentVideoTitle){
+if(video.currentTime / video.duration > 0.95){
+markWatched(currentVideoTitle);
+}
+
+}
+
+});
+
+function format(t){
+if(!t) return "0:00";
+let m=Math.floor(t/60);
+let s=Math.floor(t%60);
+return m+":"+(s<10?"0":"")+s;
+}
+
+progressContainer.addEventListener("click",(e)=>{
+
+if(video.duration){
+const width=progressContainer.clientWidth;
+video.currentTime=(e.offsetX/width)*video.duration;
+}
+
+});
+video.addEventListener("progress",()=>{
+
+if(video.buffered.length>0){
+
+const bufferedEnd=video.buffered.end(video.buffered.length-1);
+const percent=(bufferedEnd/video.duration)*100;
+
+buffer.style.width=percent+"%";
+
+}
+
+});
+function rewind(){ video.currentTime-=10 }
+function forward(){ video.currentTime+=10 }
+
+function changeSpeed(speed){
+video.playbackRate=parseFloat(speed);
+}
+
+/* Play */
+
+function play(url,title,element){
+
+document.querySelectorAll(".item").forEach(i=>i.classList.remove("active"));
+element.classList.add("active");
+
+videoTitle.innerText=title;
+currentVideoTitle=title;
+
+pdfViewer.style.display="none";
+video.style.display="block";
+
+if(currentHls) currentHls.destroy();
+
+url="https://ultimate-player.vicky2official1-90.workers.dev/proxy?url="+encodeURIComponent(url);
+
+currentHls=new Hls({
+
+lowLatencyMode:true,
+maxBufferLength:15,
+maxMaxBufferLength:30,
+startLevel:-1,
+backBufferLength:10,
+enableWorker:true,
+liveSyncDurationCount:3,
+maxBufferHole:0.5
+
+});
+currentHls.loadSource(url);
+currentHls.attachMedia(video);
+
+currentHls.on(Hls.Events.MANIFEST_PARSED,()=>{
+video.play();
+});
+
+}
+
+/* PDF */
+
+function openPDF(url,title,element){
+
+document.querySelectorAll(".item").forEach(i=>i.classList.remove("active"));
+element.classList.add("active");
+
+video.pause();
+video.style.display="none";
+
+pdfViewer.style.display="block";
+pdfViewer.src=url;
+
+videoTitle.innerText=title;
+
+}
+
+/* Load */
+
+function loadList(type){
+
+let url=
+type==="videos"
+? "https://ultimate-player.vicky2official1-90.workers.dev/videos.txt"
+: type==="arithmetic"
+? "https://ultimate-player.vicky2official1-90.workers.dev/arithmetic.txt"
+: "https://ultimate-player.vicky2official1-90.workers.dev/arithmetic.txt";
+fetch(url).then(r=>r.text()).then(data=>{
+
+const playlist=document.getElementById("playlist");
+playlist.innerHTML="";
+
+data.split("\n").forEach(line=>{
+if(type==="pdf" && !line.includes(".pdf")) return;
+
+if(line.includes("http")){
+
+const parts=line.split(":");
+const link=parts.slice(1).join(":");
+
+const div=document.createElement("div");
+div.className="item";
+div.textContent=parts[0];
+
+if(link.includes(".pdf")){
+div.onclick=()=>openPDF(link,parts[0],div);
+}else{
+div.onclick=()=>play(link,parts[0],div);
+}
+
+playlist.appendChild(div);
+
+loadWatched();
+
+}
+
+});
+
+});
+
+}
+
+function searchVideo(){
+
+const q=document.getElementById("search").value.toLowerCase();
+
+document.querySelectorAll(".item").forEach(item=>{
+
+item.style.display=
+item.textContent.toLowerCase().includes(q)
+? "block"
+: "none";
+
+});
+
+}
+
+loadList("videos");
+loadList("videos");
+
+video.addEventListener("waiting",()=>{
+loader.style.display="block";
+});
+
+video.addEventListener("playing",()=>{
+loader.style.display="none";
+});
+
+</script>
+
+</body></html>
