@@ -717,11 +717,15 @@ document.addEventListener("fullscreenchange",()=>{
 
 if(document.fullscreenElement){
 
+document.body.style.overflow="hidden";
+
 if(screen.orientation && screen.orientation.lock){
 screen.orientation.lock("landscape").catch(()=>{});
 }
 
 }else{
+
+document.body.style.overflow="auto";
 
 if(screen.orientation && screen.orientation.unlock){
 screen.orientation.unlock();
