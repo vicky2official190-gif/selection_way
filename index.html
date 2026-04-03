@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ultimate Player</title>
+<title>Selection Way</title>
 
 <link rel="icon" href="data:,">
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
@@ -38,6 +38,8 @@ width:100%;
 height:100%;
 object-fit:cover;
 }
+
+<style>
 
 /* PDF */
 
@@ -674,13 +676,7 @@ folder=items;
 return;
 }
 
-.folder::before{
-content:"▶ ";
-}
 
-.folder.open::before{
-content:"▼ ";
-}
 
 if(type==="pdf" && !line.includes(".pdf")) return;
 
