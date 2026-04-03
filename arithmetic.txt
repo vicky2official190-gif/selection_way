@@ -121,6 +121,7 @@
 [Arithmetic] Train_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5426/hls/master.m3u8
 [Arithmetic] Train_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5427/hls/master.m3u8
 [Arithmetic] Train_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/692fd70365f7e3fa35af5428/hls/master.m3u8
+[Arithmetic] Train_Class_4 : https://selectionwayrecordedmp4.hranker.com/561/698305f9c34e15dc66803eee/hls/master.m3u8
 # Race
 [Arithmetic] Race_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692a9a5f759872676ecc8889/hls/master.m3u8
 [Arithmetic] Race_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/692a9a5f759872676ecc888a/hls/master.m3u8
@@ -191,8 +192,9 @@
 [Arithmetic] Dishonest_Shopkeeper_1 : https://selectionwayrecordedmp4.hranker.com/561/694ecf5b4577e24306c5207b/hls/master.m3u8
 [Arithmetic] Dishonest_Shopkeeper_2 : https://selectionwayrecordedmp4.hranker.com/561/694ecf5b4577e24306c5207c/hls/master.m3u8
 [Arithmetic] Dishonest_Shopkeeper_3 : https://selectionwayrecordedmp4.hranker.com/561/694ecf5b4577e24306c5207d/hls/master.m3u8
+# Installment
 [Arithmetic] Installment : https://selectionwayrecordedmp4.hranker.com/561/6922932f040cfbb5988dcc24/hls/master.m3u8
-[Arithmetic] Train_Class_4 : https://selectionwayrecordedmp4.hranker.com/561/698305f9c34e15dc66803eee/hls/master.m3u8
+# Mensuration 2D & 3D
 [Advance] Mensuration_2D_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da9978/hls/master.m3u8
 [Advance] Mensuration_2D_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da9979/hls/master.m3u8
 [Advance] Mensuration_2D_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/6925cd1c5b130474d6da997a/hls/master.m3u8
@@ -233,6 +235,7 @@
 [Advance] Mensuration_3D_Class_21 : https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca1904/hls/master.m3u8
 [Advance] Mensuration_3D_Class_22 : https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca1905/hls/master.m3u8
 [Advance] Mensuration_3D_Class_23 : https://selectionwayrecordedmp4.hranker.com/561/6925ce69adec4d7648ca1906/hls/master.m3u8
+# Algebra
 [Advance] Algebra_class_1 : https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519381/hls/master.m3u8
 [Advance] Algebra_class_2 : https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519382/hls/master.m3u8
 [Advance] Algebra_class_3 : https://selectionwayrecordedmp4.hranker.com/561/6925cbdb390334bda8519383/hls/master.m3u8
@@ -263,6 +266,9 @@
 [Advance] Algebra_class_28 : https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b6/hls/master.m3u8
 [Advance] Algebra_class_29 : https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b7/hls/master.m3u8
 [Advance] Algebra_class_30 : https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123b8/hls/master.m3u8
+[Advance] Algebra_class_31 new : https://selectionwayrecordedmp4.hranker.com/561/69c3c97a20b6656683fdd29d/hls/master.m3u8
+[Advance] Algebra_class_32 : https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123ba/hls/master.m3u8
+# Trigonometry
 [Advance] Trigonometry_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbe5/hls/master.m3u8
 [Advance] Trigonometry_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbe6/hls/master.m3u8
 [Advance] Trigonometry_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/692ad87385291c541afcdbe7/hls/master.m3u8
@@ -288,10 +294,12 @@
 [Advance] Trigonometry_Class_23 : https://selectionwayrecordedmp4.hranker.com/561/6958df09b657be0bf16e3715/hls/master.m3u8
 [Advance] Trigonometry_Class_24 : https://selectionwayrecordedmp4.hranker.com/561/6958efb3b657be0bf16e3716/hls/master.m3u8
 [Advance] Trigonometry_Class_25 : https://selectionwayrecordedmp4.hranker.com/561/692d6d7c82b8be59a912b2c5/hls/master.m3u8
+# Height & Distance
 [Advance] Height_&_Distance_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/692d89b3eb755aebf8c8d523/hls/master.m3u8
 [Advance] Height_&_Distance_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/692d89b3eb755aebf8c8d524/hls/master.m3u8
 [Advance] Height_&_Distance_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/692d89b3eb755aebf8c8d525/hls/master.m3u8
 [Advance] Height_&_Distance_Class_4 : https://selectionwayrecordedmp4.hranker.com/561/692d89b3eb755aebf8c8d526/hls/master.m3u8
+# Geometry
 [Advance] Geometry_class_1 : https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd10432629/hls/master.m3u8
 [Advance] Geometry_class_2 : https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043262a/hls/master.m3u8
 [Advance] Geometry_class_3 : https://selectionwayrecordedmp4.hranker.com/561/6925d1e1f0a8b0fd1043262b/hls/master.m3u8
@@ -352,6 +360,19 @@
 [Advance] Geometry_class_58 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11c/hls/master.m3u8
 [Advance] Geometry_class_59 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11d/hls/master.m3u8
 [Advance] Geometry_class_60 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11e/hls/master.m3u8
+[Advance] Geometry_Class_61 : https://selectionwayrecordedmp4.hranker.com/561/69a2b30ef0fb7fd2c7fa35b6/hls/master.m3u8
+[Advance] Geometry_class_62 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11f/hls/master.m3u8
+[Advance] Geometry_class_63 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe120/hls/master.m3u8
+[Advance] Geometry_class_64 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe121/hls/master.m3u8
+[Advance] Geometry_class_65 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe122/hls/master.m3u8
+[Advance] Geometry_class_66 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe123/hls/master.m3u8
+[Advance] Geometry_class_67 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe124/hls/master.m3u8
+[Advance] Geometry_class_68 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe125/hls/master.m3u8
+[Advance] Geometry_class_69 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe126/hls/master.m3u8
+[Advance] Geometry_class_70 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe127/hls/master.m3u8
+[Advance] Geometry_class_71 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe128/hls/master.m3u8
+[Advance] Geometry_class_72 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe129/hls/master.m3u8
+# Number System
 [Advance] Class-01 || Number System | Gagan sir : https://selectionwayrecordedmp4.hranker.com/561/68e3669f10c7d671132e56ab/hls/master.m3u8
 [Advance] Class-02 || Number System | Gagan sir : https://selectionwayrecordedmp4.hranker.com/561/68e3f88210c7d6711353db5c/hls/master.m3u8
 [Advance] Class-03 || Number System | Gagan sir : https://selectionwayrecordedmp4.hranker.com/561/68e4f80e290f277f35542716/hls/master.m3u8
@@ -373,6 +394,7 @@
 [Advance] Class -19 || Number System | Gagan sir : https://selectionwaylive.hranker.com/561/690ce0716aeca24e93727190/playlist-mpl-vod.m3u8
 [Advance] Class -20 || Number System | Gagan sir : https://selectionwaylive.hranker.com/561/690eea2f6aeca24e933c184f/playlist-mpl-vod.m3u8
 [Advance] Class -21 || Number System | Gagan sir : https://selectionwaylive.hranker.com/561/6911478b932c0deb70248815/playlist-mpl-vod.m3u8
+# Calculation and Simplification
 [Advance] Class -01  || Calculation and Simplification | Gagan sir : https://selectionwayrecordedmp4.hranker.com/561/6912d529932c0deb70be72fc/hls/master.m3u8
 [Advance] Class -02  || Calculation and Simplification | Gagan sir : https://selectionwaylive.hranker.com/561/691339a2932c0deb70b2641c/playlist-mpl-vod.m3u8
 [Advance] Class -03  || Calculation and Simplification | Gagan sir : https://selectionwaylive.hranker.com/561/6914a37080d6461558e84c5b/playlist-mpl-vod.m3u8
@@ -385,6 +407,7 @@
 [Advance] Class -10  || Calculation and Simplification | Gagan sir : https://selectionwaylive.hranker.com/561/69260081dd258fd323fe6f95/playlist-mpl-vod.m3u8
 [Advance] Class -11  || Calculation and Simplification | Gagan sir : https://selectionwaylive.hranker.com/561/69273407dd258fd323fa54d7/playlist-mpl-vod.m3u8
 [Advance] Class -12  || Calculation and Simplification | Gagan sir : https://selectionwaylive.hranker.com/561/6928311edd258fd323beb3b1/playlist-mpl-vod.m3u8
+# Surds and Indices
 [Advance] Class - 01 || Surds and Indices By Gagan sir : https://selectionwaylive.hranker.com/561/692c91a0dd258fd323ff134d/playlist-mpl-vod.m3u8
 [Advance] Class - 02 || Surds and Indices By Gagan sir : https://selectionwaylive.hranker.com/561/692d806edd258fd323303ab7/playlist-mpl-vod.m3u8
 [Advance] Class - 03 || Surds and Indices By Gagan sir : https://selectionwaylive.hranker.com/561/692eb31bdd258fd3239453ab/playlist-mpl-vod.m3u8
@@ -395,6 +418,7 @@
 [Advance] Class - 08 || Surds and Indices By Gagan sir : https://selectionwaylive.hranker.com/561/6937eb926385517afa5894ad/playlist-mpl-vod.m3u8
 [Advance] Class - 09 || Surds and Indices By Gagan sir : https://selectionwaylive.hranker.com/561/69393b716385517afaf33949/playlist-mpl-vod.m3u8
 [Advance] Class - 10 || Surds and Indices By Gagan sir : https://selectionwaylive.hranker.com/561/693aad2d6385517afaa506be/playlist-mpl-vod.m3u8
+# LCM and HCF
 [Advance] Class - 01 || LCM and HCF By Gagan sir : https://selectionwaylive.hranker.com/561/693d347c6385517afaa0852e/playlist-mpl-vod.m3u8
 [Advance] Class - 02 || LCM and HCF By Gagan sir : https://selectionwaylive.hranker.com/561/693ff04e6385517afabb26bc/playlist-mpl-vod.m3u8
 [Advance] Class - 03 || LCM and HCF By Gagan sir : https://selectionwaylive.hranker.com/561/694122f96385517afa145cd3/playlist-mpl-vod.m3u8
@@ -403,24 +427,24 @@
 [Advance] Class - 06 || LCM and HCF By Gagan sir : https://selectionwaylive.hranker.com/561/694a9189b38db8674bc22cb1/playlist-mpl-vod.m3u8
 [Advance] Class - 07 || LCM and HCF By Gagan sir : https://selectionwaylive.hranker.com/561/694bc5282feca20f817f3ffc/playlist-mpl-vod.m3u8
 [Advance] Class - 08 || LCM and HCF By Gagan sir : https://selectionwaylive.hranker.com/561/694d0825b54cadeb61a82f45/playlist-mpl-vod.m3u8
-[Advance] DI_1 : https://selectionwayrecordedmp4.hranker.com/561/692d7a2282b8be59a912b2cc/hls/master.m3u8
-[Advance] DI_2 : https://selectionwayrecordedmp4.hranker.com/561/69269fd88cc6268d62317a97/hls/master.m3u8
-[Advance] Probability_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/694ece9cc511cd0e9095f079/hls/master.m3u8
-[Advance] Probability_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/694ece9cc511cd0e9095f07a/hls/master.m3u8
-[Advance] Probability_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/694ece9cc511cd0e9095f07b/hls/master.m3u8
-[Advance] Statistics_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/6925d3af84eb4986e7a2386e/hls/master.m3u8
-[Advance] Statistics_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/6925d3af84eb4986e7a2386f/hls/master.m3u8
-[Advance] Statistics_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/6925d3af84eb4986e7a23870/hls/master.m3u8
-[Advance] Class - 1 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99030/hls/master.m3u8
-[Advance] Class - 2 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99031/hls/master.m3u8
-[Advance] Class - 3 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99032/hls/master.m3u8
-[Advance] Class -1 || Quadratic Equation || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695bab19b8bd89a477fc82cf/hls/master.m3u8
-[Advance] Class -2 || Quadratic Equation || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695bab19b8bd89a477fc82d0/hls/master.m3u8
-[Advance] Class -3 || Quadratic Equation || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695bab19b8bd89a477fc82d1/hls/master.m3u8
-[Advance] Class -4 || Quadratic Equation || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695bab19b8bd89a477fc82d2/hls/master.m3u8
 [Advance] Class - 09 || LCM and HCF By Gagan sir : https://selectionwaylive.hranker.com/561/69517592b54cadeb61687a7b/playlist-mpl-vod.m3u8
 [Advance] Class - 10 || LCM and HCF By Gagan sir : https://selectionwaylive.hranker.com/561/6953a402b54cadeb6158a5f1/playlist-mpl-vod.m3u8
 [Advance] Class - 11 || LCM and HCF By Gagan sir : https://selectionwaylive.hranker.com/561/6956b948c1e281b464da9f92/playlist-mpl-vod.m3u8
+# DI
+[Advance] DI_1 : https://selectionwayrecordedmp4.hranker.com/561/692d7a2282b8be59a912b2cc/hls/master.m3u8
+[Advance] DI_2 : https://selectionwayrecordedmp4.hranker.com/561/69269fd88cc6268d62317a97/hls/master.m3u8
+# Probability
+[Advance] Probability_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/694ece9cc511cd0e9095f079/hls/master.m3u8
+[Advance] Probability_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/694ece9cc511cd0e9095f07a/hls/master.m3u8
+[Advance] Probability_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/694ece9cc511cd0e9095f07b/hls/master.m3u8
+# Statistics
+[Advance] Statistics_Class_1 : https://selectionwayrecordedmp4.hranker.com/561/6925d3af84eb4986e7a2386e/hls/master.m3u8
+[Advance] Statistics_Class_2 : https://selectionwayrecordedmp4.hranker.com/561/6925d3af84eb4986e7a2386f/hls/master.m3u8
+[Advance] Statistics_Class_3 : https://selectionwayrecordedmp4.hranker.com/561/6925d3af84eb4986e7a23870/hls/master.m3u8
+# Coordinate Geometry
+[Advance] Class - 1 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99030/hls/master.m3u8
+[Advance] Class - 2 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99031/hls/master.m3u8
+[Advance] Class - 3 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99032/hls/master.m3u8
 [Advance] Class - 4 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99033/hls/master.m3u8
 [Advance] Class - 5 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99034/hls/master.m3u8
 [Advance] Class - 6 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99035/hls/master.m3u8
@@ -428,22 +452,16 @@
 [Advance] Class - 8 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99037/hls/master.m3u8
 [Advance] Class - 9 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99038/hls/master.m3u8
 [Advance] Class - 10 || Coordinate Geometry || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695b8be3d8a76afc0fd99039/hls/master.m3u8
+# Quadratic Equation
+[Advance] Class -1 || Quadratic Equation || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695bab19b8bd89a477fc82cf/hls/master.m3u8
+[Advance] Class -2 || Quadratic Equation || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695bab19b8bd89a477fc82d0/hls/master.m3u8
+[Advance] Class -3 || Quadratic Equation || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695bab19b8bd89a477fc82d1/hls/master.m3u8
+[Advance] Class -4 || Quadratic Equation || by Gagan Sir : https://selectionwayrecordedmp4.hranker.com/561/695bab19b8bd89a477fc82d2/hls/master.m3u8
+# Maxima & Minima
 [Advance] Maxima_and_Minima : https://selectionwayrecordedmp4.hranker.com/561/6926b32eb5c7c9630d06234a/hls/master.m3u8
+# Permutation & Combinations
 [Advance] Permutations_Combinations : https://selectionwayrecordedmp4.hranker.com/561/69698578027f25d29e9dc697/hls/master.m3u8
-[Advance] Geometry_Class_61 : https://selectionwayrecordedmp4.hranker.com/561/69a2b30ef0fb7fd2c7fa35b6/hls/master.m3u8
-[Advance] Geometry_class_62 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe11f/hls/master.m3u8
-[Advance] Geometry_class_63 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe120/hls/master.m3u8
-[Advance] Geometry_class_64 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe121/hls/master.m3u8
-[Advance] Geometry_class_65 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe122/hls/master.m3u8
-[Advance] Geometry_class_66 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe123/hls/master.m3u8
-[Advance] Geometry_class_67 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe124/hls/master.m3u8
-[Advance] Geometry_class_68 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe125/hls/master.m3u8
-[Advance] Geometry_class_69 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe126/hls/master.m3u8
-[Advance] Geometry_class_70 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe127/hls/master.m3u8
-[Advance] Geometry_class_71 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe128/hls/master.m3u8
-[Advance] Geometry_class_72 : https://selectionwayrecordedmp4.hranker.com/561/6925d2d81bf16324a0ebe129/hls/master.m3u8
-[Advance] Algebra_class_31 new : https://selectionwayrecordedmp4.hranker.com/561/69c3c97a20b6656683fdd29d/hls/master.m3u8
-[Advance] Algebra_class_32 : https://selectionwayrecordedmp4.hranker.com/561/6925cc620d577a6eaa4123ba/hls/master.m3u8
+# AARAMBH BATCH ADVANCE
 [ADVANCE] आरम्भ Batch || Class - 01 || Classification of Numbers (संख्याओं का वर्गीकरण) | by Gagan sir : https://selectionwayrecordedmp4.hranker.com/561/69ad4882a2b1ae043369156d/hls/master.m3u8
 [ADVANCE] आरम्भ Batch || Class - 02 || Classification of Numbers (संख्याओं का वर्गीकरण) | by Gagan sir : https://selectionwayrecordedmp4.hranker.com/561/6936e2ef6385517afa9a1bfd/hls/master.m3u8
 [ADVANCE] आरम्भ Batch || Class - 03 || Classification of Numbers (संख्याओं का वर्गीकरण) | by Gagan sir : https://selectionwayrecordedmp4.hranker.com/561/69390e7bd3220ee0f5093d7c/hls/master.m3u8
@@ -484,6 +502,7 @@
 [ADVANCE] Class -2 || Trigonometry by gagan sir | आरम्भ Batch : https://selectionwayrecordedmp4.hranker.com/561/69bb93ae2086ac9f00c7c348/hls/master.m3u8
 [ADVANCE] Class -3 || Trigonometry by gagan sir | आरम्भ Batch : https://selectionwayrecordedmp4.hranker.com/561/69bb94142086ac9f00c8158c/hls/master.m3u8
 [ADVANCE] Class -1 || Geometry by gagan sir | आरम्भ Batch : https://selectionwayrecordedmp4.hranker.com/561/69bb94502086ac9f00c86797/hls/master.m3u8
+# AARAMBH BATCH ARITHMETIC
 [ARITHMETIC] आरम्भ Batch | Class - 01 || Percentage (प्रतिशत) | by Gagan sir : https://selectionwayrecordedmp4.hranker.com/561/69ad4a17795a3ab1161a4cb0/hls/master.m3u8
 [ARITHMETIC] आरम्भ Batch | Class - 02 || Percentage (प्रतिशत) | by Gagan sir : https://selectionwaylive.hranker.com/561/6958cf869ed6d5d242badab5/playlist-mpl-vod.m3u8
 [ARITHMETIC] आरम्भ Batch | Class - 03 || Percentage (प्रतिशत) | by Gagan sir : https://selectionwaylive.hranker.com/561/695b77389ed6d5d242ec5e6f/playlist-mpl-vod.m3u8
