@@ -194,6 +194,53 @@ background:#0e0e13;
 font-size:14px;
 }
 
+/* Modern First View */
+
+.video-container::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+height:80px;
+background:linear-gradient(rgba(0,0,0,0.8),transparent);
+z-index:2;
+}
+
+.video-container::after{
+content:"";
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+height:120px;
+background:linear-gradient(transparent,rgba(0,0,0,0.9));
+z-index:2;
+}
+
+.center-play{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:50px;
+background:rgba(0,0,0,.6);
+width:80px;
+height:80px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+z-index:4;
+transition:.3s;
+}
+
+.center-play.hide{
+opacity:0;
+pointer-events:none;
+}
+
 /* Loader */
 
 .loader{
@@ -488,6 +535,7 @@ display:block;
 <div class="video-container" id="videoContainer">
 
 <video id="video" preload="auto" playsinline webkit-playsinline></video>
+<div class="center-play" id="centerPlay">▶</div>
 <div class="loader" id="loader"></div>
 
 <iframe id="pdfViewer" class="pdf-viewer"></iframe>
@@ -565,6 +613,19 @@ const controls=document.getElementById("controls");
 
 const tapLeft=document.getElementById("tapLeft");
 const tapRight=document.getElementById("tapRight");
+const centerPlay=document.getElementById("centerPlay");
+
+video.addEventListener("play",()=>{
+centerPlay.classList.add("hide");
+});
+
+video.addEventListener("pause",()=>{
+centerPlay.classList.remove("hide");
+});
+
+centerPlay.onclick=()=>{
+video.paused?video.play():video.pause();
+};
 
 let currentHls;
 
