@@ -653,7 +653,6 @@ line=line.trim();
 
 if(!line) return;
 
-// Folder
 if(line.startsWith("#")){
 
 const f=document.createElement("div");
@@ -673,7 +672,6 @@ folder=items;
 return;
 }
 
-// PDF filter
 if(type==="pdf" && !line.includes(".pdf")) return;
 
 if(line.includes("http")){
@@ -704,53 +702,6 @@ loadWatched();
 }
 
 
-if(line.includes("http")){
-
-const parts=line.split(":");
-const link=parts.slice(1).join(":");
-
-const div=document.createElement("div");
-div.className="item";
-div.textContent=parts[0];
-
-div.onclick=()=>play(link,parts[0],div);
-
-(folder || playlist).appendChild(div);
-
-}
-
-});
-
-});
-
-}if(type==="pdf" && !line.includes(".pdf")) return;
-
-if(line.includes("http")){
-
-const parts=line.split(":");
-const link=parts.slice(1).join(":");
-
-const div=document.createElement("div");
-div.className="item";
-div.textContent=parts[0];
-
-if(link.includes(".pdf")){
-div.onclick=()=>openPDF(link,parts[0],div);
-}else{
-div.onclick=()=>play(link,parts[0],div);
-}
-
-(folder || playlist).appendChild(div);
-
-loadWatched();
-
-}
-
-});
-
-});
-
-}
 
 function searchVideo(){
 
