@@ -20,24 +20,24 @@ overflow-x:hidden;
 }
 
 .sticky-player{
-position:fixed;
+position:sticky;
 top:0;
-left:0;
-right:0;
 z-index:9999;
 background:#000;
-height:72vh;
-overflow:hidden;
 }
 
-#playlist{
-position:fixed;
-top:72vh;
-bottom:0;
-left:0;
-right:0;
-overflow-y:auto;
-background:#000;
+.video-container{
+position:relative;
+width:100%;
+aspect-ratio:16/9;
+background:black;
+}
+
+.header{
+position:sticky;
+top:0;
+z-index:9998;
+background:#111;
 }
 
 video{
