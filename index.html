@@ -222,6 +222,26 @@ justify-content:center;
 font-size:14px;
 }
 
+.folder{
+background:#111;
+padding:12px;
+font-weight:bold;
+cursor:pointer;
+border-bottom:1px solid #333;
+}
+
+.folder-items{
+display:none;
+}
+
+.folder-items.open{
+display:block;
+}
+
+.folder-items .item{
+padding-left:20px;
+}
+
 /* WATCHED TICK */
 
 .item.watched::after{
@@ -610,6 +630,8 @@ videoTitle.innerText=title;
 
 /* Load */
 
+
+
 function loadList(type){
 
 let url=
@@ -618,6 +640,7 @@ type==="videos"
 : type==="arithmetic"
 ? "https://selection-way.vicky2official1-90.workers.dev/arithmetic.txt"
 : "https://selection-way.vicky2official1-90.workers.dev/arithmetic.txt";
+
 fetch(url).then(r=>r.text()).then(data=>{
 
 const playlist=document.getElementById("playlist");
@@ -626,6 +649,9 @@ playlist.innerHTML="";
 let folder=null;
 
 data.split("\n").forEach(line=>{
+
+line=line.trim();
+
 if(line.startsWith("#")){
 
 const f=document.createElement("div");
@@ -635,7 +661,7 @@ f.textContent=line.replace("#","");
 const items=document.createElement("div");
 items.className="folder-items";
 
-f.onclick=()=>f.classList.toggle("open");
+f.onclick=()=>items.classList.toggle("open");
 
 playlist.appendChild(f);
 playlist.appendChild(items);
@@ -644,7 +670,27 @@ folder=items;
 
 return;
 }
-if(type==="pdf" && !line.includes(".pdf")) return;
+
+if(line.includes("http")){
+
+const parts=line.split(":");
+const link=parts.slice(1).join(":");
+
+const div=document.createElement("div");
+div.className="item";
+div.textContent=parts[0];
+
+div.onclick=()=>play(link,parts[0],div);
+
+(folder || playlist).appendChild(div);
+
+}
+
+});
+
+});
+
+}if(type==="pdf" && !line.includes(".pdf")) return;
 
 if(line.includes("http")){
 
