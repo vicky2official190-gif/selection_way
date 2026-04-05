@@ -1144,6 +1144,46 @@ document.getElementById("speed").value = savedSpeed;
 
 });
 
+// KEYBOARD SHORTCUTS
+document.addEventListener("keydown",(e)=>{
+
+if(document.activeElement.tagName==="INPUT") return;
+
+switch(e.key){
+
+case " ":
+e.preventDefault();
+video.paused ? video.play() : video.pause();
+break;
+
+case "ArrowRight":
+forward();
+break;
+
+case "ArrowLeft":
+rewind();
+break;
+
+case "ArrowUp":
+video.volume=Math.min(1,video.volume+0.1);
+break;
+
+case "ArrowDown":
+video.volume=Math.max(0,video.volume-0.1);
+break;
+
+case "f":
+toggleFullscreen();
+break;
+
+case "m":
+video.muted=!video.muted;
+break;
+
+}
+
+});
+
 </script>
 
 <script>
