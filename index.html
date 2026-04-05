@@ -868,13 +868,30 @@ buffer.style.width=percent+"%";
 }
 
 });
-function rewind(){ video.currentTime-=10 }
-function forward(){ video.currentTime+=10 }
+function rewind(){
+
+video.currentTime -= 10;
+
+if(video.playbackRate >= 1.5 && currentHls){
+currentHls.startLoad();
+}
+
+}
+function forward(){
+
+video.currentTime += 10;
+
+if(video.playbackRate >= 1.5 && currentHls){
+currentHls.startLoad();
+}
+
+}
 
 function changeSpeed(speed){
 
 speed=parseFloat(speed);
 video.playbackRate=speed;
+video.preload="auto";
 
 if(speed>=1.5 && currentHls){
 
@@ -923,7 +940,6 @@ url="https://ultimate-player.vicky2official1-90.workers.dev/proxy?url="+encodeUR
 currentHls=new Hls({
 
 lowLatencyMode:false,
-liveDurationInfinity:true,
 
 // 2 HOUR ULTRA STABLE
 maxBufferLength:20,
