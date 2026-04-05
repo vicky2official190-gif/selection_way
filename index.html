@@ -880,41 +880,46 @@ currentVideoTitle=title;
 pdfViewer.style.display="none";
 video.style.display="block";
 
-if(currentHls) currentHls.destroy();
+if(currentHls){
+currentHls.destroy();
+currentHls = null;
+video.removeAttribute("src");
+video.load();
 
 url="https://ultimate-player.vicky2official1-90.workers.dev/proxy?url="+encodeURIComponent(url);
 
 currentHls=new Hls({
 
-lowLatencyMode:true,
+lowLatencyMode:false,
+liveDurationInfinity:true,
 
-// STABLE BUFFER
-maxBufferLength:15,
-maxMaxBufferLength:30,
-backBufferLength:10,
+// 2 HOUR ULTRA STABLE
+maxBufferLength:20,
+maxMaxBufferLength:40,
+backBufferLength:15,
+
+// MEMORY SAFE
+maxBufferSize:100*1000*1000,
 
 // FAST START
 startLevel:-1,
 startFragPrefetch:true,
 
-// SEEK FAST
-maxBufferHole:0.1,
+// STABLE SEEK
+maxBufferHole:0.5,
 seekHoleNudgeDuration:0.01,
 
-// MOBILE OPTIMIZATION
+// NETWORK STABLE
 enableWorker:true,
-liveSyncDurationCount:3,
-
-// FAST LOADING
-fragLoadingMaxRetry:6,
-manifestLoadingMaxRetry:6,
-
-// NETWORK OPTIMIZATION
 abrFastSwitch:true,
-abrEwmaDefaultEstimate:500000
+abrEwmaDefaultEstimate:500000,
+maxFragLookUpTolerance: 0.5,
+
+// RETRY
+fragLoadingMaxRetry:6,
+manifestLoadingMaxRetry:6
 
 });
-
 currentHls.loadSource(url);
 currentHls.attachMedia(video);
 
@@ -923,6 +928,7 @@ video.play();
 });
 
 currentHls.on(Hls.Events.ERROR,function(event,data){
+
 
 if(data.fatal){
 
@@ -947,7 +953,6 @@ break;
 });
 
 }
-
 /* PDF */
 
 function openPDF(url,title,element){
@@ -1058,7 +1063,6 @@ item.textContent.toLowerCase().includes(q)
 
 }
 
-loadList("videos");
 loadList("videos");
 
 video.addEventListener("waiting",()=>{
