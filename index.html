@@ -598,7 +598,7 @@ z-index:99999;
 <button onclick="stopVideo()">⏹ Stop</button>
 <button onclick="forward()">⏩ 10s</button>
 
-<select onchange="changeSpeed(this.value)">
+<select id="speed" onchange="changeSpeed(this.value)">
 <option>0.5</option>
 <option>0.75</option>
 <option selected>1</option>
@@ -923,6 +923,7 @@ const savedSpeed = localStorage.getItem("playbackSpeed");
 
 if(savedSpeed){
 video.playbackRate = savedSpeed;
+document.getElementById("speed").value = savedSpeed;
 }
 
 // RESUME WHERE LEFT
