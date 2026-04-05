@@ -888,10 +888,10 @@ currentHls=new Hls({
 
 lowLatencyMode:true,
 
-// ULTRA SMOOTH BUFFER
-maxBufferLength:30,
-maxMaxBufferLength:60,
-backBufferLength:30,
+// STABLE BUFFER
+maxBufferLength:15,
+maxMaxBufferLength:30,
+backBufferLength:10,
 
 // FAST START
 startLevel:-1,
@@ -922,8 +922,6 @@ currentHls.on(Hls.Events.MANIFEST_PARSED,()=>{
 video.play();
 });
 
-// ERROR RECOVERY (IMPORTANT)
-
 currentHls.on(Hls.Events.ERROR,function(event,data){
 
 if(data.fatal){
@@ -949,6 +947,7 @@ break;
 });
 
 }
+
 /* PDF */
 
 function openPDF(url,title,element){
