@@ -982,7 +982,16 @@ currentHls.loadSource(url);
 currentHls.attachMedia(video);
 
 currentHls.on(Hls.Events.MANIFEST_PARSED,()=>{
+
+const savedSpeed = localStorage.getItem("playbackSpeed");
+
+if(savedSpeed){
+video.playbackRate = savedSpeed;
+document.getElementById("speed").value = savedSpeed;
+}
+
 video.play();
+
 });
 
 currentHls.on(Hls.Events.ERROR,function(event,data){
@@ -1128,7 +1137,16 @@ loader.style.display="block";
 });
 
 video.addEventListener("playing",()=>{
+
 loader.style.display="none";
+
+const savedSpeed = localStorage.getItem("playbackSpeed");
+
+if(savedSpeed){
+video.playbackRate = savedSpeed;
+document.getElementById("speed").value = savedSpeed;
+}
+
 });
 
 </script>
