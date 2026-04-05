@@ -822,6 +822,14 @@ format(video.currentTime)+" / "+format(video.duration);
 
 }
 
+// SAVE POSITION
+if(currentVideoTitle){
+localStorage.setItem(
+"resume_"+currentVideoTitle,
+video.currentTime
+);
+}
+
 /* WATCH COMPLETE */
 
 if(video.duration && currentVideoTitle){
@@ -864,7 +872,20 @@ function rewind(){ video.currentTime-=10 }
 function forward(){ video.currentTime+=10 }
 
 function changeSpeed(speed){
-video.playbackRate=parseFloat(speed);
+
+speed=parseFloat(speed);
+video.playbackRate=speed;
+
+if(speed>=1.5 && currentHls){
+
+currentHls.config.maxBufferLength=40;
+currentHls.config.maxMaxBufferLength=80;
+currentHls.config.backBufferLength=40;
+
+currentHls.startLoad();
+
+}
+
 }
 
 /* Play */
@@ -875,7 +896,17 @@ document.querySelectorAll(".item").forEach(i=>i.classList.remove("active"));
 element.classList.add("active");
 
 videoTitle.innerText=title;
+
 currentVideoTitle=title;
+
+// RESUME WHERE LEFT
+const resumeTime = localStorage.getItem("resume_"+title);
+
+if(resumeTime){
+video.addEventListener("loadedmetadata",()=>{
+video.currentTime = resumeTime;
+},{once:true});
+}
 
 pdfViewer.style.display="none";
 video.style.display="block";
