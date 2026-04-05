@@ -893,6 +893,8 @@ speed=parseFloat(speed);
 video.playbackRate=speed;
 video.preload="auto";
 
+localStorage.setItem("playbackSpeed", speed);
+
 if(speed>=1.5 && currentHls){
 
 currentHls.config.maxBufferLength=40;
@@ -915,6 +917,13 @@ element.classList.add("active");
 videoTitle.innerText=title;
 
 currentVideoTitle=title;
+
+// LOAD SAVED SPEED
+const savedSpeed = localStorage.getItem("playbackSpeed");
+
+if(savedSpeed){
+video.playbackRate = savedSpeed;
+}
 
 // RESUME WHERE LEFT
 const resumeTime = localStorage.getItem("resume_"+title);
