@@ -594,9 +594,16 @@ z-index:99999;
 <div class="time" id="timeDisplay">0:00 / 0:00</div>
 
 <div class="bottom-controls">
+
+<button onclick="stopVideo()">⏯</button>
+
 <button onclick="rewind()">⏪ 10s</button>
-<button onclick="stopVideo()">⏹ Stop</button>
+
 <button onclick="forward()">⏩ 10s</button>
+
+<input type="range" min="0" max="1" step="0.05" 
+value="1" onchange="video.volume=this.value" 
+style="width:90px">
 
 <select id="speed" onchange="changeSpeed(this.value)">
 <option>0.5</option>
@@ -614,22 +621,6 @@ z-index:99999;
 
 <button onclick="toggleFullscreen()">⛶</button>
 
-</div>
-
-</div>
-</div>
-
-<div class="video-title" id="videoTitle">
-No Lecture Playing
-</div>
-
-<div class="header">
-<div class="btn" onclick="loadList('videos')">Videos</div>
-<div class="btn" onclick="loadList('arithmetic')">Arithmetic</div>
-<div class="btn" onclick="loadList('pdf')">PDF</div>
-
-<div class="search">
-<input id="search" placeholder="Search" onkeyup="searchVideo()">
 </div>
 </div>
 
