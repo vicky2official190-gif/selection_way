@@ -1027,16 +1027,11 @@ function openPDF(url,title,element){
 document.querySelectorAll(".item").forEach(i=>i.classList.remove("active"));
 element.classList.add("active");
 
-video.pause();
-video.style.display="none";
-
-pdfViewer.style.display="block";
-pdfViewer.src=url;
+window.open(url,"_blank");
 
 videoTitle.innerText=title;
 
 }
-
 /* Load */
 
 
