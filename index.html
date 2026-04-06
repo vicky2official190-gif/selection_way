@@ -719,6 +719,43 @@ hoverTime.style.display="block";
 progressContainer.addEventListener("mouseleave",()=>{
 hoverTime.style.display="none";
 });
+
+function loadContinueWatching(){
+
+const playlist=document.getElementById("playlist");
+
+let resumeVideos=[];
+
+document.querySelectorAll(".item").forEach(item=>{
+
+let title=item.textContent;
+
+let time=localStorage.getItem("resume_"+title);
+
+if(time && time > 30){
+resumeVideos.push(item.cloneNode(true));
+}
+
+});
+
+if(resumeVideos.length>0){
+
+const title=document.createElement("div");
+title.innerHTML="▶ Continue Watching";
+title.style.padding="12px";
+title.style.background="#111";
+title.style.fontWeight="bold";
+
+playlist.prepend(title);
+
+resumeVideos.reverse().forEach(v=>{
+playlist.prepend(v);
+});
+
+}
+
+}
+
 function loadWatched(){
 let watched=JSON.parse(localStorage.getItem("watchedVideos")||"[]");
 
@@ -1121,6 +1158,8 @@ loadWatched();
 });
 
 });
+
+loadContinueWatching();
 
 }
 
