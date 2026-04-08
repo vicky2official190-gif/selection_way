@@ -927,13 +927,7 @@ function rewind(){
 video.currentTime -= 10;
 
 if(currentHls){
-
-currentHls.stopLoad();
-
-setTimeout(()=>{
-currentHls.startLoad();
-},100);
-
+currentHls.startLoad(-1);
 }
 
 }
@@ -943,13 +937,7 @@ function forward(){
 video.currentTime += 10;
 
 if(currentHls){
-
-currentHls.stopLoad();
-
-setTimeout(()=>{
-currentHls.startLoad();
-},100);
-
+currentHls.startLoad(-1);
 }
 
 }
@@ -965,13 +953,20 @@ if(currentHls){
 
 if(speed>=1.5){
 
-currentHls.config.maxBufferLength=120;
-currentHls.config.maxMaxBufferLength=240;
-currentHls.config.backBufferLength=80;
+currentHls.config.maxBufferLength=180;
+currentHls.config.maxMaxBufferLength=360;
+currentHls.config.backBufferLength=120;
+
+}else{
+
+// normal speed buffer
+currentHls.config.maxBufferLength=60;
+currentHls.config.maxMaxBufferLength=120;
+currentHls.config.backBufferLength=30;
 
 }
 
-currentHls.startLoad();
+currentHls.startLoad(-1);
 
 }
 
@@ -1021,24 +1016,32 @@ currentHls=new Hls({
 
 lowLatencyMode:false,
 
-// ULTRA BUFFER
-maxBufferLength:80,
-maxMaxBufferLength:160,
+// ULTRA BUFFER (Smooth 2x playback)
+maxBufferLength:90,
+maxMaxBufferLength:180,
 backBufferLength:60,
 
+// MEMORY SAFE
 maxBufferSize:200*1000*1000,
 
-startLevel:-1,
-startFragPrefetch:true,
+// FAST START + STABLE
+startLevel:0,
+capLevelToPlayerSize:true,
 
-maxBufferHole:0.05,
-seekHoleNudgeDuration:0.01,
-
-enableWorker:true,
-abrFastSwitch:true,
-abrEwmaDefaultEstimate:1000000,
+// ABR STABLE (important)
+abrFastSwitch:false,
+abrEwmaDefaultEstimate:1500000,
 maxFragLookUpTolerance:0.5,
 
+// SEEK SMOOTH
+maxBufferHole:0.3,
+seekHoleNudgeDuration:0.01,
+
+// PERFORMANCE
+enableWorker:true,
+startFragPrefetch:true,
+
+// RETRY (network stable)
 fragLoadingMaxRetry:8,
 manifestLoadingMaxRetry:8
 
