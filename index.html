@@ -958,23 +958,20 @@ function changeSpeed(speed){
 
 speed=parseFloat(speed);
 video.playbackRate=speed;
-video.preload="auto";
 
 localStorage.setItem("playbackSpeed", speed);
 
 if(currentHls){
 
-// HIGH SPEED BUFFER
 if(speed>=1.5){
-currentHls.config.maxBufferLength=50;
-currentHls.config.maxMaxBufferLength=100;
-currentHls.config.backBufferLength=40;
+
+currentHls.config.maxBufferLength=120;
+currentHls.config.maxMaxBufferLength=240;
+currentHls.config.backBufferLength=80;
+
 }
 
-// SMOOTH START
-requestAnimationFrame(()=>{
 currentHls.startLoad();
-});
 
 }
 
@@ -1024,31 +1021,26 @@ currentHls=new Hls({
 
 lowLatencyMode:false,
 
-// ULTRA SMOOTH BUFFER
-maxBufferLength:40,
-maxMaxBufferLength:80,
-backBufferLength:30,
+// ULTRA BUFFER
+maxBufferLength:80,
+maxMaxBufferLength:160,
+backBufferLength:60,
 
-// MEMORY SAFE
-maxBufferSize:150*1000*1000,
+maxBufferSize:200*1000*1000,
 
-// FAST START
 startLevel:-1,
 startFragPrefetch:true,
 
-// SEEK SMOOTH
-maxBufferHole:0.1,
+maxBufferHole:0.05,
 seekHoleNudgeDuration:0.01,
 
-// NETWORK STABLE
 enableWorker:true,
 abrFastSwitch:true,
-abrEwmaDefaultEstimate:500000,
+abrEwmaDefaultEstimate:1000000,
 maxFragLookUpTolerance:0.5,
 
-// RETRY
-fragLoadingMaxRetry:6,
-manifestLoadingMaxRetry:6
+fragLoadingMaxRetry:8,
+manifestLoadingMaxRetry:8
 
 });
 
